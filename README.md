@@ -2,7 +2,25 @@
 
 # Videoflix Project 
 
-This guide explains how to set up and run an existing Video project using a `requirements.txt` file.
+VideoFlix is a Netflix-inspired video streaming platform that delivers high-quality video content with adaptive streaming using HLS (HTTP Live Streaming). Built with Django on the backend and Angular on the frontend, it supports user authentication using DRF-JWT-AUTHENTICATION, dynamic video resolution switching, and efficient content delivery via segmented streaming.
+
+---
+
+# Features
+🔐 Authentication System
+Secure login, registration, and token-based authentication using JWT with refresh/access tokens.
+
+🎞️ HLS Video Streaming
+Adaptive streaming based on internet speed and resolution preference (e.g., 1080p, 720p, 480p).
+
+📂 Segmented Streaming Support
+Videos are split into .ts segments and served efficiently using HLS standards.
+
+🧾 Playlist Indexing
+Dynamically generated .m3u8 playlists for each resolution level.
+
+🎛️ Admin Video Management
+Upload and manage videos through Django admin or custom endpoints.
 
 ---
 
