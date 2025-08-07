@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .button {
+      background-color: rgb(2, 45, 199);
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 20px 0;
+      border-radius: 24px;
+    }
+  </style>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; padding: 20px;">
+
+ 
+
+  <p>Hallo</p>
+
+  <p>
+    We recently received a request to reset your password. 
+    If you made the request, plase click the follwoing link to reset your password.
+  </p>
+
+  <p style="text-align: left;">
+    <a href="{{ reset_link }}" class="button">Reset Password</a>
+  </p>
+
+  <p>Please note that for security resons, this link is only valid for 24 hours</p>
+  <p>If you did not set a password rest, please ignore this email</p>
+  <br/>
+  <p>Best regards,<br>Your VideoFlix Team</p>
+
+   <!-- Logo -->
+  <div style="text-align: left; margin-bottom: 30px;">
+    <img src="cid:logo" alt="VideoFlix Logo" style="height: 60px;">
+  </div>
+
+</body>
+</html>
