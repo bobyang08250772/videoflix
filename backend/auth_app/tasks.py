@@ -23,7 +23,7 @@ def send_activation_email(email, activation_link):
     msg = EmailMultiAlternatives(
         subject,
         plain_message,
-        from_email='info@videoFlix.com',
+        from_email=settings.DEFAULT_FROM_EMAIL,
         to=[email]
     )
     msg.attach_alternative(html_message, "text/html")
