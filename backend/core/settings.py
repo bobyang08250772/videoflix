@@ -151,6 +151,8 @@ STATIC_ROOT = BASE_DIR / 'static'
 MEDIA_URL = '/videoflix/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
+FORCE_SCRIPT_NAME = '/videoflix'
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
