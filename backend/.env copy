@@ -1,0 +1,29 @@
+DJANGO_SUPERUSER_USERNAME=admin
+DJANGO_SUPERUSER_PASSWORD=admin123
+DJANGO_SUPERUSER_EMAIL=admin@example.com
+
+SECRET_KEY="django-insecure-!1(47q+lhm!um+m_(%_tym&rj0(m#u1gukq_89_lwm09do(4=4"
+DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1,api.yangxin-projects.com
+CSRF_TRUSTED_ORIGINS=http://localhost:4200,http://127.0.0.1:4200,http://localhost:5500,http://127.0.0.1:5500, https://videoflix.yangxin.de
+
+DB_NAME=videoflix_db
+DB_USER=videoflix_user
+DB_PASSWORD=supersecretpassword
+DB_HOST=localhost
+DB_PORT=5432
+# docker-compose exec videoflix_database psql -U your_database_name -d your_database_name
+
+REDIS_HOST=localhost
+REDIS_LOCATION=redis://localhost:6379/1
+REDIS_PORT=6379
+REDIS_DB=0
+
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_PORT=587
+EMAIL_HOST_USER='yangxin08250772@gmail.com'
+EMAIL_HOST_PASSWORD='qznb cwqy hrpn hvca'
+EMAIL_USE_TLS=True
+EMAIL_USE_SSL=False
+DEFAULT_FROM_EMAIL='yangxin08250772@gmail.com'
+
