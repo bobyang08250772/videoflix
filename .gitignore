@@ -7,8 +7,10 @@ backend/.venv/
 backend/.env
 backend/.Python
 
+
 # Ignore Python cache files
 **/__pycache__/
 *.py[cod]
 
 backend/media
+backend/static/

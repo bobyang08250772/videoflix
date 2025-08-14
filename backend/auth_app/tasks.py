@@ -55,7 +55,7 @@ def send_passwordreset_email(email, passwordreset_link):
     msg = EmailMultiAlternatives(
         subject,
         plain_message,
-        from_email='info@videoFlix.com',
+        from_email=settings.DEFAULT_FROM_EMAIL,
         to=[email]
     )
     msg.attach_alternative(html_message, "text/html")
