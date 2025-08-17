@@ -36,7 +36,7 @@ class RegisterView(APIView):
 
         token = default_token_generator.make_token(user)
         uidb64 = urlsafe_base64_encode(force_bytes(user.pk))
-        activation_link = f"http://127.0.0.1:5500/pages/auth/activate.html?uid={quote(uidb64)}&token={quote(token)}"
+        activation_link = f"https://videoflix.yangxin.de/pages/auth/activate.html?uid={quote(uidb64)}&token={quote(token)}"
 
         enqueue_after_commit(send_activation_email, user.email, activation_link)
 
@@ -201,7 +201,7 @@ class PasswordResetView(APIView):
         
         token = default_token_generator.make_token(user)
         uidb64 = urlsafe_base64_encode(force_bytes(user.pk))
-        reset_link = f'http://127.0.0.1:5500/pages/auth/confirm_password.html?uid={uidb64}&token={token}'
+        reset_link = f'https://videoflix.yangxin.de/pages/auth/confirm_password.html?uid={uidb64}&token={token}'
 
         enqueue_after_commit(send_passwordreset_email, user.email, reset_link)
       
