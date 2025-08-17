@@ -118,7 +118,8 @@ class LoginView(TokenObtainPairView):
             key='access_token',
             value = str(access),
             httponly=True,
-            samesite='Lax',
+            secure=True,
+            samesite='None',
             max_age=int(access_token_lifetime.total_seconds())
         )
 
@@ -127,7 +128,7 @@ class LoginView(TokenObtainPairView):
             value = str(refresh),
             httponly=True,
             secure=True,
-            samesite='Lax',
+            samesite='None',
             max_age=int(refresh_token_lifetime.total_seconds())
         )
         
@@ -179,7 +180,7 @@ class CustomTokenRefreshView(TokenRefreshView):
             "access": access_token
             })
         
-        response.set_cookie(key='access_token', value=access_token, httponly=True, samesite='Lax')
+        response.set_cookie(key='access_token', value=access_token, httponly=True, samesite='None', secure=True)
         return response
 
 
